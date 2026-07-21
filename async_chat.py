@@ -1,5 +1,7 @@
 import asyncio
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+from azure.identity.aio import (
+    DefaultAzureCredential, get_bearer_token_provider
+)    
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
 import os
